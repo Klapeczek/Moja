@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moja Aplikacja Webowa</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 1em 0;
+        }
+        main {
+            padding: 20px;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Witamy w Mojej Aplikacji Webowej</h1>
+    </header>
+    <main>
+        <p>To jest prosty przykład aplikacji webowej. Możesz kliknąć przycisk poniżej:</p>
+        <button onclick="showMessage()">Kliknij mnie!</button>
+        <p id="message" style="margin-top: 20px; font-weight: bold;"></p>
+    </main>
+    <script>
+        function showMessage() {
+            document.getElementById('message').innerText = 'Dziękuję za kliknięcie!';
+        }
+    </script>
+</body>
+</html>
